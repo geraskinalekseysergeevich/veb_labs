@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header></header>
+		<main>
+			<div class="_container">
+				<div class="buttons">
+					<button type="button" class="create_table_button" onclick="createTable()">Создать таблицу</button><br>
+					<button type="button" id="add_line_button" onclick="addLine()" disabled>Добавить строку</button>
+					<div class="delete_line">
+						<button type="button" id="delete_line_button" onclick="deleteLine()" disabled>Удалить строку №</button>
+						<input type="number" min="1" step="1" name="num_of_line" id="line_number" value="Введите номер строки" disabled>
+					</div>
+				</div>
+				<div class="table" id="table">
+					<!-- <table>
+						<tr>
+							<td><br></td>
+							<td><br></td>
+						</tr>
+					</table> -->
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
